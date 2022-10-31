@@ -1,0 +1,32 @@
+[
+    {
+        "_id":"4001",
+        "details":"diabetes",
+        "medication":{
+            "name":"purpleDVI",
+            "doseage":"3 times a day, after meal",
+            "sideEffect":["inactive behaviour","reduce in bowel movement"]
+        },
+        "appointment":["2001"]
+    },
+    {
+        "_id":"4002",
+        "details":"ID",
+        "medication":{
+            "name":"IBprofin",
+            "doseage":"1 time a day before sleep",
+            "sideEffect":["dizziness"]
+        },
+        "appointment":["2002"]
+    },
+    {
+        "_id":"4001",
+        "details":"HBP",
+        "medication":{
+            "name":"TTIVtablet",
+            "doseage":"2 times a day, before meal",
+            "sideEffect":null
+        },
+        "appointment":["2003"]
+    }
+]

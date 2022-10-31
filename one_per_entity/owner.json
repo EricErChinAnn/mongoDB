@@ -1,0 +1,35 @@
+[
+    {
+        "_id": "0001",
+        "name": "John Snow",
+        "address":{
+            "street":"High Drug Ave 4",
+            "unit":"01-210"
+        },
+        "contact":"96716666",
+        "pet":["1001"],
+        "appointment":["2001"]
+    },
+    {
+        "_id": "0002",
+        "name": "Snoppy Dogg",
+        "address":{
+            "street":"420 HighCloud Road",
+            "unit":"03-110"
+        },
+        "contact":"96717777",
+        "pet":["1002"],
+        "appointment":["2002"]
+    },
+    {
+        "_id": "0003",
+        "name": "Hydra Assasin",
+        "address":{
+            "street":"666 Underground Lane",
+            "unit":"05-111"
+        },
+        "contact":"967178888",
+        "pet":["1003","1004"],
+        "appointment":["2003"]
+    }
+]

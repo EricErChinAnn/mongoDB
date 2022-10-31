@@ -1,0 +1,47 @@
+[
+    {
+        "_id":"3001",
+        "name":"Hector Vic",
+        "schedule":{
+            "am":["mon","tue","thur","sat"],
+            "pm":["wed","fri"]
+        },
+        "appointment":[2001]
+    },
+    {
+        "_id":"3002",
+        "name":"Victor Hic",
+        "schedule":{
+            "am":["tue","thur","sat"],
+            "pm":["mon","wed","fri"]
+        },
+        "appointment":[2002]
+    },
+    {
+        "_id":"3003",
+        "name":"Hector Vic",
+        "schedule":{
+            "am":["sat"],
+            "pm":["mon","tue","thur","wed","fri"]
+        },
+        "appointment":[2003]
+    },
+    {
+        "_id":"3004",
+        "name":"Hector Vic",
+        "schedule":{
+            "am":["mon","tue","sat"],
+            "pm":["wed","thur","fri"]
+        },
+        "appointment":[]
+    },
+    {
+        "_id":"3005",
+        "name":"Hector Vic",
+        "schedule":{
+            "am":["mon","tue"],
+            "pm":["wed","fri","thur","sat"]
+        },
+        "appointment":[]
+    }
+]

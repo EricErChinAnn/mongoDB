@@ -1,0 +1,32 @@
+[
+    {
+        "_id":"2001",
+        "owner":"0001",
+        "pet":["1001"],
+        "bills":100,
+        "date_time":"2022-10-31 16.07",
+        "vet":"3001",
+        "follow_up":true,
+        "diagnosis":"4001"
+    },
+    {
+        "_id":"2002",
+        "owner":"0002",
+        "pet":["1002"],
+        "bills":150,
+        "date_time":"2022-09-01 11.30",
+        "vet":"3002",
+        "follow_up":false,
+        "diagnosis":"4002"
+    },
+    {
+        "_id":"2003",
+        "owner":"0003",
+        "pet":["1003","1004"],
+        "bills":350,
+        "date_time":"2022-10-10 12.00",
+        "vet":"3003",
+        "follow_up":false,
+        "diagnosis":"4003"
+    }
+]

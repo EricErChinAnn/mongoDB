@@ -1,0 +1,26 @@
+[
+    {
+        "_id":"5001",
+        "owner":"John Snow",
+        "pet":"Houndoom",
+        "breed":"dog",
+        "diagnosis":["diabetes"],
+        "medication":{
+            "name":"purpleDVI",
+            "doseage":"3 times a day, after meal",
+            "sideEffect":["inactive behaviour","reduce in bowel movement"]
+        }
+    },
+    {
+        "_id":"5002",
+        "owner":"Snoppy Dogg",
+        "name": "Icky",
+        "breed":"cat",
+        "diagnosis":["ID"],
+        "medication":{
+            "name":"IBprofin",
+            "doseage":"1 time a day before sleep",
+            "sideEffect":["dizziness"]
+        }
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "1001",
+        "name": "Houndoom",
+        "breed":"dog",
+        "owner":"0001",
+        "appointment":["2001"]
+    },
+    {
+        "_id": "1002",
+        "name": "Icky",
+        "breed":"cat",
+        "owner":"0002",
+        "appointment":["2002"]
+    },
+    {
+        "_id": "1003",
+        "name": "Hercules",
+        "breed":"snake",
+        "owner":"0003",
+        "appointment":["2003"]
+    },
+    {
+        "_id": "1004",
+        "name": "Hera",
+        "breed":"frog",
+        "owner":"0003",
+        "appointment":["2003"]
+    }
+]
