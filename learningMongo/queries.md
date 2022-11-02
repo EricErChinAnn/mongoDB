@@ -196,3 +196,136 @@ db.movies.find({
     "title":1,
 })
 ```
+
+#
+#
+#
+# Create a new database
+Just type
+```
+use animal_shelter
+```
+
+## To add one collection into the database
+db.(collection name).insertOne({})
+```
+db.animals.insertOne({
+    "name":"Putty",
+    "age":"3",
+    "breed":"Hunting Hound",
+    "type":"Dog"
+})
+```
+
+## To add multiple collection into the database
+db.(collection name).insertMany([{},{},{}])
+```
+db.animals.insertMany([
+    {
+    "name":"Tutty",
+    "age":"2",
+    "breed":"Ragdoll",
+    "type":"Cat"
+},{
+    "name":"Hutty",
+    "age":"31",
+    "breed":"Green Tree Python",
+    "type":"snake"
+}
+])
+```
+
+## Update the data
+db.(collection's name).updateOne({ID},{$set:{data u wanna edit}});
+```
+db.animals.updateOne({
+    "_id":ObjectId("63620763c1fb22c50f2e1d90")
+},{
+    $set:{
+        "name":"Percy"
+    }
+})
+```
+
+## Delete a data
+```
+db.animals.deleteOne({
+    "_id":ObjectId("636206bcc1fb22c50f2e1d8f")
+})
+```
+
+# Add item into array in a document
+```
+db.animals.updateOne({
+    "_id":ObjectId("63620763c1fb22c50f2e1d91")
+},{
+    $push:{
+        "checkups":{
+            "_id":ObjectId(),
+            "vetName":"Dr Tan",
+            "diagnosis":"HBP",
+            "treatment":"medication"
+        }
+    }
+})
+```
+# Remove an element in the array
+```
+db.animals.updateOne({
+    "_id":ObjectId("63620763c1fb22c50f2e1d90")
+},{
+    $pull:{
+        "checkups":{
+            "_id":ObjectId("63620ab7c1fb22c50f2e1d93"),
+        }
+    }
+})
+```
+
+## Change one element in an array of object
+```
+db.animals.updateOne({
+    "_id":ObjectId("63620763c1fb22c50f2e1d91"),
+    "checkups":{
+        "$elemMatch":{
+            "_id":ObjectId("63620a0cc1fb22c50f2e1d92")
+        }
+    }
+},{
+    $set:{
+        "checkups.$.vetName":"Dr SuuSuu"
+    }
+})
+```
+
+## Pushing 2 objects into the same param
+```
+db.animals.updateOne({
+    "_id":ObjectId("63620763c1fb22c50f2e1d90")
+},{
+    $push:{
+        "checkups":{
+            "_id":ObjectId(),
+            "vetName":"Dr Ace",
+            "diagnosis":"STD",
+            "treatment":"pills"
+        }
+    }
+})
+```
+
+## Edit all data made by a var
+```
+db.animals.updateMany({
+},{
+    $set:{
+        "checkups.$[eachCheckup].diagnosis":"redacted"
+        }
+},{
+    "arrayFilters":[
+        {
+            "eachCheckup.vetName":"Dr SuuSuu"
+        }
+    ]
+})
+```
