@@ -1,0 +1,16 @@
+Create Express application for a shelter to register animals and surrendered pets. Start a new Express application and implement the following routes:
+A route to get the id, breed, age and description of all pets in the system
+A route to add a new pet to the system. Each pet has the following fields:
+
+Name
+Breed
+Description
+Age
+Problems, which is an array of strings describing the health issues of the animal
+Tags, which is an array of strings describing the tags of the animal, such as "cat friendly", "scared of loud noises" etc.
+
+Add to each pet the two following fields:
+HDB approved (radio button, either true or false)
+Change the tags to use checkboxes, and have the following checkboxes: house broken, vaccinated, chipped and fixed. 
+A route to get the full details of a pet given its ID
+A route to update the basic details of a pet, given its ID: name, breed, description, age, problems, tags and whether it is HDB approved.
